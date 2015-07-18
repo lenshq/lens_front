@@ -24,4 +24,4 @@ npm test
 
 # resources
 
-* [google](https://google.com)
+* [redux devtools](https://github.com/gaearon/redux-devtools)

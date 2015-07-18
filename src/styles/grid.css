@@ -1,0 +1,10 @@
+/** @define container */
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+
+  @media screen and (--large) {
+    width: 40%;
+  }
+}
