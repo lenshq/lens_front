@@ -46,6 +46,7 @@ There is a `config` section in `package.json`:
 │   │   │       └── /jestPreprocessor.js   # ES2015 transpilation & webpack integration settings for jest
 │   │   │       └── /stubRouterContext.js  # Helper to stub react-router
 │   │   ├── /stores/                       # Stores contain the application state and logic
+│   │   ├── /widets/                       # React widget components
 │   │   └── /main.js                       # Applicaton entry point
 │   ├── /styles/                           # Additional fonts that used in project
 │   └── /templates/                        # Templates for server-side rendering
