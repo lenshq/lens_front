@@ -72,6 +72,9 @@ export default {
     return [
       require('cssnext')(config.cssnext),
       require('postcss-nested'),
+      require('postcss-size'),
+      require('postcss-focus'),
+      require('postcss-position'),
       require('postcss-bem-linter')(config.bemLinter),
       require('postcss-reporter')
     ];

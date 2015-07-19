@@ -2,14 +2,17 @@
 # The humans responsible & technology colophon
 
 # TEAM
+
     Vasiliy Yorkin, @yorkin
+    Andrew Kumanyaev, @zzet
+    TODO: add other team members here
 
 # THANKS
-
-    me (:
+     
+     Everyone!
 
 # TECHNOLOGY COLOPHON
 
     es2015, postcss, webpack, babel,
-    react, react-router, flux, alt,
+    react, react-router, flux, redux,
     fetch api, fastclick, etc

@@ -1,0 +1,33 @@
+/** @define button */
+
+.button {
+  display: inline-block;
+  padding: 0.34em 0.68em;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+  touch-action: manipulation;
+
+  &--default {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+  }
+
+  &--default:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+  }
+
+  &--success {
+    background-color: #71993a;
+    border-color: #618f2a;
+  }
+
+  &--success:hover {
+    background-color: #89b452;
+    border-color: #74b93d;
+  }
+}

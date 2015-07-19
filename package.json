@@ -1,19 +1,19 @@
 {
-  "name": "assignment",
+  "name": "lens_front",
   "version": "0.1.0-pre-alpha",
-  "description": "Excursiopedia test assigment",
+  "description": "Web UI for Lens ­ smart profiling tool for Rails apps",
   "main": "index.js",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vyorkin/assignment.git"
+    "url": "git+https://github.com/lenshq/lens_front.git"
   },
   "engines": {
     "iojs": ">= 2.3",
     "npm": ">= 2.12"
   },
   "keywords": [
-    "assignment"
+    "lens"
   ],
   "author": "Vasiliy Yorkin <vasiliy.yorkin@gmail.com>",
   "license": "MIT",
@@ -70,9 +70,12 @@
     "nyan-progress-webpack-plugin": "^1.0.0",
     "opn": "^3.0.2",
     "postcss-bem-linter": "^0.4.0",
+    "postcss-focus": "^0.1.1",
     "postcss-loader": "^0.5.1",
     "postcss-nested": "^0.3.2",
+    "postcss-position": "^0.2.0",
     "postcss-reporter": "^0.3.1",
+    "postcss-size": "^0.2.0",
     "psi": "^1.0.6",
     "react-hot-loader": "^1.2.8",
     "require-dir": "^0.3.0",

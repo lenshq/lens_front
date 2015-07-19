@@ -1,0 +1,5 @@
+.page--index {
+  background: #000 url(cover.jpg);
+  background-size: cover;
+  height: 100%;
+}

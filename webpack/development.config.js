@@ -7,8 +7,6 @@ import merge from 'webpack-merge';
 import config from '../config';
 import commonConfig from './common.config';
 
-const NODE_MODULES_PATH = path.resolve(__dirname, '../node_modules');
-
 export default merge(commonConfig, {
   entry: [
     'webpack-dev-server/client?' + config.server.url,

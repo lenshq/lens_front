@@ -1,8 +1,9 @@
 @import 'normalize.css';
-@import 'base';
+@import 'typography.css';
 @import 'grid';
-@import 'typography';
-@import 'form';
+
+@import 'controls/button.css';
+@import 'controls/icon.css';
 
 html {
   overflow-x: hidden;
@@ -14,5 +15,5 @@ html, body {
 
 body {
   background-color: #fff;
-  color: #fff;
+  color: #222;
 }
