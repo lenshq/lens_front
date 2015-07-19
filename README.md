@@ -19,6 +19,48 @@ There is a `config` section in `package.json`:
 * `openInBrowser` ­ set to `true` if you want to open your app in browser when running `npm start`
 * `sourceMap` ­ enable source maps (works only for development env)
 
+# directory layout
+
+```
+.
+├── /build/                                # The folder for compiled output
+├── /docs/                                 # Documentation files for the project
+├── /config/                               # Build configuration files
+├── /gulp/                                 # Gulp tasks
+├── /node_modules/                         # 3rd-party libraries and utilities
+├── /src/                                  # The source code and resources of the application
+│   ├── /assets/                           # Static files which are copied to ./build on compile
+│   ├── /fonts/                            # Additional fonts that used in project
+│   ├── /scripts/                          # Additional fonts that used in project
+│   │   ├── /actions/                      # Action creators that allow to trigger a dispatch to stores
+│   │   ├── /api/                          # REST API / Relay endpoints
+│   │   ├── /components/                   # React components
+│   │   ├── /decorators/                   # Decorators for various needs
+│   │   ├── /forms/                        # React components representing forms
+│   │   ├── /layouts/                      # Application layouts
+│   │   ├── /lib/                          # App-specific code, utility classes and functions
+│   │   ├── /pages/                        # React components representing "pages" in SPA
+│   │   ├── /routes/                       # Routing configuration files
+│   │   ├── /spec/                         # Setup for jest testing lib
+│   │   │   └── /support/                  # Helpers & utilies for testing
+│   │   │       └── /jestPreprocessor.js   # ES2015 transpilation & webpack integration settings for jest
+│   │   │       └── /stubRouterContext.js  # Helper to stub react-router
+│   │   ├── /stores/                       # Stores contain the application state and logic
+│   │   └── /main.js                       # Applicaton entry point
+│   ├── /styles/                           # Additional fonts that used in project
+│   └── /templates/                        # Templates for server-side rendering
+├── /webpack/                              # Webpack configuration files
+│   ├── /common.config.js                  # Common build settings for webpack
+│   ├── /development.config.js             # Webpack settings to be applied only for development env
+│   └── /production.config.js              # Production webpack settings
+│── gulpfile.babel.js                      # Configuration file for automated builds
+│── browserlist                            # The list of supporter browsers for autoprefixer
+│── config.js                              # The main configuration file
+│── package.json                           # The list of 3rd party libraries and utilities
+│── preprocessor.js                        # ES6 transpiler settings for Jest
+└── webpack.config.js                      # Webpack configuration for bundling and optimization
+```
+
 # npm tasks
 
 to install dependencies:
