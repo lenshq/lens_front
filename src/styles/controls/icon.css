@@ -1,10 +1,14 @@
-.icon {
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  size: 1em;
-}
+/** @define icon */
 
-.icon--large {
-  size: 2em;
+.icon {
+  backface-visibility: hidden;
+  size: 1em;
+
+  &--small { size: 0.5em; }
+  &--large { size: 2em; }
+
+  &--github {
+    background: url('../../icons/github.svg');
+    background-size: cover;
+  }
 }
