@@ -1,5 +1,55 @@
 .page--index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   background: #000 url(cover.jpg);
   background-size: cover;
   height: 100%;
+}
+
+.promo {
+  color: #fff;
+
+  &__content {
+    margin-bottom: 3em;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin: 0 0 1em 0;
+  }
+}
+
+.logo {
+  background: url(lense-logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icon--github {
+  margin-right: 1em;
+  mask: url(github-logo.svg);
+  mask-size: cover;
+  background-color: #fff;
+  transition: 0.2s transform ease-in;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.button--sign-in {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+
+  &:hover .icon {
+    transform: scale(1.4);
+  }
 }
