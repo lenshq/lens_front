@@ -31,7 +31,7 @@ There is a `config` section in `package.json`:
 ├── /src/                                  # The source code and resources of the application
 │   ├── /assets/                           # Static files which are copied to ./build on compile
 │   ├── /fonts/                            # Additional fonts that used in project
-│   ├── /scripts/                          # Additional fonts that used in project
+│   ├── /scripts/                          # Application scripts
 │   │   ├── /actions/                      # Action creators that allow to trigger a dispatch to stores
 │   │   ├── /api/                          # REST API / Relay endpoints
 │   │   ├── /components/                   # React components
