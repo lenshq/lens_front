@@ -1,5 +1,7 @@
 # front-end part
 
+![Lens](http://puu.sh/j94yx/64be2e08f6.png "Lens – profiling tool for Rails apps.")
+
 # setup
 
 There is a `config` section in `package.json`:
