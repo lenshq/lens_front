@@ -13,7 +13,7 @@
     "npm": ">= 2.12"
   },
   "keywords": [
-    "lens"
+    "lenshq"
   ],
   "author": "Vasiliy Yorkin <vasiliy.yorkin@gmail.com>",
   "license": "MIT",
@@ -91,7 +91,7 @@
     "build": "gulp build --production"
   },
   "config": {
-    "appName": "Lens",
+    "appName": "LensHQ",
     "https": false,
     "host": "localhost",
     "port": 3001,

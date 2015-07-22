@@ -1,6 +1,6 @@
 # front-end part
 
-![Lens](http://puu.sh/j94yx/64be2e08f6.png "Lens – profiling tool for Rails apps.")
+![LensHQ](http://puu.sh/j94yx/64be2e08f6.png "LensHQ – profiling tool for Rails apps.")
 
 # setup
 
