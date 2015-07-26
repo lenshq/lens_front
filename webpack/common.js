@@ -70,6 +70,7 @@ export default {
   },
   postcss: function() {
     return [
+      require('precss'),
       require('cssnext')(config.cssnext),
       require('postcss-nested'),
       require('postcss-size'),

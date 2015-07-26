@@ -5,7 +5,7 @@ import webpack from 'webpack';
 import merge from 'webpack-merge';
 
 import config from '../config';
-import commonConfig from './common.config';
+import commonConfig from './common';
 
 export default merge(commonConfig, {
   entry: [

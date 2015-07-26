@@ -22,7 +22,7 @@ gulp.task('bundle', () => {
     }));
   }
 
-  if (isWatching) {
+  if (watch) {
     bundler.watch(200, bundle);
   } else {
     bundler.run(bundle);

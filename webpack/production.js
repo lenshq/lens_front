@@ -5,7 +5,7 @@ import webpack from 'webpack';
 import merge from 'webpack-merge';
 
 import config from '../config';
-import commonConfig from './common.config';
+import commonConfig from './common';
 
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
@@ -19,7 +19,7 @@ export default merge(commonConfig, {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style', 'css!postcss')
+        loader: ExtractTextPlugin.extract('style', 'css?minimize!postcss')
       }
     ]
   },
