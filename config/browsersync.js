@@ -23,7 +23,7 @@ export default function(config, argv) {
     reloadDebounce: 100,
     injectChanges: true,
     ui: {
-      port: 8080
+      port: 3002
     },
     open: config.openInBrowser || false
   };
