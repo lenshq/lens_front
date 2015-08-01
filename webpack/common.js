@@ -26,7 +26,6 @@ export default {
         loader: 'eslint'
       }
     ],
-
     loaders: [
       {
         test: /\.svg$/,
@@ -56,7 +55,7 @@ export default {
       title: config.appName,
       template: path.resolve(__dirname, '../src/templates/main.html')
     }),
-    new NyanProgressPlugin()
+    // new NyanProgressPlugin()
   ],
 
   target: 'web',

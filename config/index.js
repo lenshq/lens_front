@@ -1,5 +1,5 @@
 import minimist from 'minimist';
-import { config } from './package';
+import { config } from './../package';
 
 const argv = minimist(process.argv.slice(2));
 
@@ -21,8 +21,8 @@ export default {
   appName: config.appName,
   apiRoot: config.apiRoot,
 
-  server: require('./config/server.js')(config, argv),
-  browserSync: require('./config/browsersync.js')(config, argv),
-  cssnext: require('./config/cssnext.js')({ sourcemap }),
-  bemLinter: require('./config/bemLinter.js')
+  server: require('./server.js')(config, argv),
+  browserSync: require('./browsersync.js')(config, argv),
+  cssnext: require('./cssnext.js')({ sourcemap }),
+  bemLinter: require('./bemLinter.js')
 }
