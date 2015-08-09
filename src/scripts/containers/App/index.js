@@ -8,6 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
+        <h1>test12123</h1>
         {this.props.children}
         <nav className='navigation'>
           <ul>

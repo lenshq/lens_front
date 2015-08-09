@@ -1,3 +1,4 @@
+import path from 'path';
 import browserSync from 'browser-sync';
 import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
@@ -9,7 +10,7 @@ gulp.task('hooy', () => {
   browserSync({
     ...config.browserSync,
     server: {
-      baseDir: 'src',
+      baseDir: path.resolve(__dirname, '../../src/scripts'),
       middleware: [
         webpackDevMiddleware(bundler, {
           publicPath: webpackConfig.output.publicPath,
@@ -28,6 +29,7 @@ gulp.task('hooy', () => {
         }),
         webpackHotMiddleware(bundler)
       ]
-    }
+    },
+    files: []
   });
 });

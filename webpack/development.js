@@ -9,7 +9,7 @@ import commonConfig from './common';
 
 export default merge(commonConfig, {
   entry: [
-    'webpack-dev-server/client',
+    'webpack/hot/dev-server',
     'webpack-hot-middleware/client'
   ],
   module: {

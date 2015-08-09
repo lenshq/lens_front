@@ -7,28 +7,23 @@ import config from '../config';
 import HtmlPlugin from 'html-webpack-plugin';
 
 export default {
-  entry: [path.resolve(__dirname, '../src/scripts/main')],
+  context: path.resolve(__dirname, '../src/scripts'),
+  entry: ['./main'],
   resolve: {
     root: path.resolve(__dirname, '..'),
     modulesDirectories: ['node_modules'],
     extensions: ['', '.js', '.jsx', '.json'],
     alias: {
-      'react': path.join(__dirname, '../node_modules/react'),
-      'redux': path.join(__dirname, '../node_modules/redux')
+      'react': path.resolve(__dirname, '../node_modules/react'),
+      'redux': path.resolve(__dirname, '../node_modules/redux')
     }
   },
   output: {
     path: path.resolve(__dirname, '../build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.jsx?$/,
-        include: [path.resolve(__dirname, '../src/scripts')],
-        loader: 'eslint'
-      }
-    ],
     loaders: [
       {
         test: /\.svg$/,
