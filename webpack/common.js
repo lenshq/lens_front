@@ -11,7 +11,11 @@ export default {
   resolve: {
     root: path.resolve(__dirname, '..'),
     modulesDirectories: ['node_modules'],
-    extensions: ['', '.js', '.jsx', '.json']
+    extensions: ['', '.js', '.jsx', '.json'],
+    alias: {
+      'react': path.join(__dirname, '../node_modules/react'),
+      'redux': path.join(__dirname, '../node_modules/redux')
+    }
   },
   output: {
     path: path.resolve(__dirname, '../build'),

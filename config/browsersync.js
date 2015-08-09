@@ -22,9 +22,8 @@ export default function(config, argv) {
     reloadOnRestart: true,
     reloadDebounce: 100,
     injectChanges: true,
-    ui: {
-      port: 3002
-    },
+    port: 3000,
+    ui: { port: 3002 },
     open: config.openInBrowser || false
   };
 }

@@ -7,7 +7,7 @@ gulp.task('bundle', () => {
     if (err) {
       throw new $.util.PluginError('webpack', err);
     }
-
+    
     const verbose = !!config.argv.verbose;
 
     $.util.log('[webpack]', stats.toString({

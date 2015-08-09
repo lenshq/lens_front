@@ -36,7 +36,6 @@ export default merge(commonConfig, {
     noInfo: true,
     historyApiFallback: true,
     quiet: true,
-    silent: true,
     lazy: false,
     inline: true,
     headers: {
