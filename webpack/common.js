@@ -5,7 +5,6 @@ import webpack from 'webpack';
 import config from '../config';
 
 import HtmlPlugin from 'html-webpack-plugin';
-import NyanProgressPlugin from 'nyan-progress-webpack-plugin';
 
 export default {
   entry: [path.resolve(__dirname, '../src/scripts/main')],
@@ -45,6 +44,10 @@ export default {
   },
   plugins: [
     new webpack.DefinePlugin({
+      __CLIENT__: true,
+      __SERVER__: false,
+      __DEVELOPMENT__: config.DEVELOPMENT,
+      __DEVTOOLS__: config.DEVELOPMENT,
       'settings': {
         'apiRoot': JSON.stringify(config.apiRoot),
       },
@@ -54,8 +57,7 @@ export default {
     new HtmlPlugin({
       title: config.appName,
       template: path.resolve(__dirname, '../src/templates/main.html')
-    }),
-    // new NyanProgressPlugin()
+    })
   ],
 
   target: 'web',
@@ -81,7 +83,9 @@ export default {
   },
   eslint: {
     configFile: path.resolve(__dirname, '../.eslintrc'),
+    formatter: require('eslint-friendly-formatter'),
+    emitWarning: true,
     failOnError: false,
     failOnWarning: false
   }
-};
+}

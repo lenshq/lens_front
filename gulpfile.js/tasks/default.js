@@ -1,3 +1,3 @@
 gulp.task('default', () => {
-  sequence(['watch', 'assets', 'server', 'sync']);
+  sequence(['watch', 'assets', 'bundle', 'server', 'sync']);
 });

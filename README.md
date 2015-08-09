@@ -4,6 +4,14 @@
 
 ![LensHQ](http://puu.sh/j955F/d2bf0077be.png "LensHQ – profiling tool for Rails apps.")
 
+# prerequisites
+
+for smooth dev process install these tools:
+
+* [nvm](https://github.com/creationix/nvm)
+* [avn](https://github.com/wbyoung/avn)
+* [avn-nvm](https://github.com/wbyoung/avn-nvm)
+
 # setup
 
 There is a `config` section in `package.json`:
@@ -90,4 +98,5 @@ npm test
 
 # resources
 
-* [redux devtools](https://github.com/gaearon/redux-devtools)
+* [awesome react](https://github.com/enaqx/awesome-react)
+* [awesome redux](https://github.com/xgrommx/awesome-redux)

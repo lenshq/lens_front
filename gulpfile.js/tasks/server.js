@@ -7,7 +7,7 @@ gulp.task('server', (callback) => {
       if (err) {
         console.log(err);
       }
-      console.log('webpack development server is listening at %s', config.server.url);
+      console.log('🚧  webpack development server is listening at %s', config.server.url);
       callback();
     });
 });

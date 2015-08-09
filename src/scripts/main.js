@@ -1,8 +1,13 @@
 import React from 'react';
-import Router from 'react-router';
+import ReactDOM from 'react-dom';
+import Router, { Route } from 'react-router';
 import FastClick from 'fastclick';
 
-import appRoutes from './routes/app';
+import { history } from 'react-router/lib/BrowserHistory';
+import { reduxRouteComponent } from 'redux-react-router';
+
+import routes from './routes';
+import store from './lib/redux/store';
 
 import '../styles/main.css';
 
@@ -14,11 +19,9 @@ new Promise((resolve) => {
   }
 }).then(() => FastClick.attach(document.body))
   .then(() => {
-    const container = document.createElement('div');
-    container.style.height = '100%';
-    document.body.appendChild(container);
-
-    Router.run(appRoutes, Router.HistoryLocation, (Handler) => {
-      React.render(<Handler/>, container);
-    });
+    ReactDOM.render((
+      <Router history={history}>
+        <Route component={reduxRouteComponent(store)}>{routes}</Route>
+      </Router>
+    ), document.getElementById('root'));
   });

@@ -37,6 +37,11 @@ export default merge(commonConfig, {
     historyApiFallback: true,
     quiet: true,
     silent: true,
+    lazy: false,
+    inline: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    },
     stats: {
       colors: true,
       reasons: true
