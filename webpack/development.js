@@ -9,8 +9,8 @@ import commonConfig from './common';
 
 export default merge(commonConfig, {
   entry: [
-    'webpack-dev-server/client?' + config.server.url,
-    'webpack/hot/only-dev-server'
+    'webpack-dev-server/client',
+    'webpack-hot-middleware/client'
   ],
   module: {
     loaders: [
@@ -28,22 +28,5 @@ export default merge(commonConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ],
-  devServer: {
-    contentBase: 'build/',
-    publicPath: '/',
-    hot: true,
-    noInfo: true,
-    historyApiFallback: true,
-    quiet: true,
-    lazy: false,
-    inline: true,
-    headers: {
-      'Access-Control-Allow-Origin': '*'
-    },
-    stats: {
-      colors: true,
-      reasons: true
-    }
-  }
+  ]
 });

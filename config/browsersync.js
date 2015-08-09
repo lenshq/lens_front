@@ -11,7 +11,6 @@ export default function(config, argv) {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser
     https: config.https,
-    proxy: host + ':' + port,
     ghostMode: {
       clicks: true,
       forms: true,
