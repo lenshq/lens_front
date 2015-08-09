@@ -39,8 +39,6 @@ function createEnhancedStore() {
   return finalCreateStore(reducer);
 }
 
-console.log('I am just creating a new store each time');
 const store = createEnhancedStore();
-console.log('Sorry for that man');
 
 export default store;
