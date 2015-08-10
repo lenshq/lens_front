@@ -1,7 +1,6 @@
 /* global __DEVELOPMENT__, __CLIENT__, __DEVTOOLS__ */
 
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import { routerStateReducer } from 'redux-react-router';
 
 import thunkMiddleware from 'redux-thunk'
 import { batchedUpdatesMiddleware } from 'redux-batched-updates';
@@ -16,7 +15,6 @@ const middleware = [
 ];
 
 const reducer = combineReducers({
-  router: routerStateReducer,
   ...reducers
 });
 

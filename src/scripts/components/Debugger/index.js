@@ -32,10 +32,10 @@ export default class Debugger extends Component {
 
   render() {
     return (
-      <DebugPanel left right bottom key='debugPanel'>
+      <DebugPanel top right bottom key='debugPanel'>
         <DevTools
           store={this.props.store}
-          monitor={SliderMonitor}
+          monitor={LogMonitor}
         />
       </DebugPanel>
     );
