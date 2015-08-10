@@ -31,7 +31,7 @@ export default merge(commonConfig, {
   ],
   devServer: {
     contentBase: 'build/',
-    publicPath: '/',
+    publicPath: commonConfig.output.publicPath,
     hot: true,
     noInfo: true,
     historyApiFallback: true,

@@ -16,7 +16,7 @@ export default {
   assets: ['src/assets/**'],
 
   sourceMap: sourcemap,
-  devtool: '#source-map',
+  devtool: 'cheap-module-eval-source-map',
 
   appName: config.appName,
   apiRoot: config.apiRoot,

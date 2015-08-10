@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router, { Route } from 'react-router';
 import FastClick from 'fastclick';
 
-import { history } from 'react-router/lib/BrowserHistory';
-import { reduxRouteComponent } from 'redux-react-router';
-
-import routes from './routes';
-import store from './lib/redux/store';
+import HashHistory from 'react-router/lib/HashHistory';
+import BrowserHistory from 'react-router/lib/BrowserHistory';
 
 import '../styles/main.css';
+import Root from './root';
+
+const history = new BrowserHistory();
 
 new Promise((resolve) => {
   if (window.addEventListener) {
@@ -19,9 +18,8 @@ new Promise((resolve) => {
   }
 }).then(() => FastClick.attach(document.body))
   .then(() => {
-    ReactDOM.render((
-      <Router history={history}>
-        <Route component={reduxRouteComponent(store)}>{routes}</Route>
-      </Router>
-    ), document.getElementById('root'));
+    ReactDOM.render(
+      <Root history={history} />,
+      document.getElementById('root')
+    );
   });

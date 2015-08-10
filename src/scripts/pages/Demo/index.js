@@ -9,7 +9,7 @@ import * as CounterActions from '../../actions/CounterActions';
 @connect(state => ({ counter: state.counter }))
 export default class Demo extends Component {
   render() {
-    const { counter = 0, dispatch } = this.props;
+    const { counter, dispatch } = this.props;
     return (
       <div>
         <h1>tss</h1>

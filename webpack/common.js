@@ -7,7 +7,8 @@ import config from '../config';
 import HtmlPlugin from 'html-webpack-plugin';
 
 export default {
-  entry: [path.resolve(__dirname, '../src/scripts/main')],
+  context: path.resolve(__dirname, '../src/scripts'),
+  entry: ['./main'],
   resolve: {
     root: path.resolve(__dirname, '..'),
     modulesDirectories: ['node_modules'],
@@ -19,7 +20,8 @@ export default {
   },
   output: {
     path: path.resolve(__dirname, '../build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     preLoaders: [

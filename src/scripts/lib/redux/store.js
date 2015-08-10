@@ -20,7 +20,7 @@ const reducer = combineReducers({
   ...reducers
 });
 
-function createEnhancedStore() {
+function setupStore() {
   let finalCreateStore;
 
   if (__DEVELOPMENT__ && __CLIENT__ && __DEVTOOLS__) {
@@ -39,6 +39,6 @@ function createEnhancedStore() {
   return finalCreateStore(reducer);
 }
 
-const store = createEnhancedStore();
+const store = setupStore();
 
 export default store;
