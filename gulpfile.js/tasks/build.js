@@ -1,3 +1,1 @@
-gulp.task('build', () => {
-  sequence(['clean', 'assets', 'bundle', 'minify']);
-});
+gulp.task('build', () => sequence(['clean', 'assets', 'bundle', 'minify']));
