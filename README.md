@@ -1,5 +1,3 @@
-[![Floobits Status](https://floobits.com/vyorkin/lenshq.svg)](https://floobits.com/vyorkin/lenshq/redirect)
-
 # lenshq web client
 
 ![LensHQ](http://puu.sh/j955F/d2bf0077be.png "LensHQ – profiling tool for Rails apps.")
